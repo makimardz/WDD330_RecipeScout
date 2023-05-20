@@ -1,6 +1,6 @@
 .modal-header {
-  background-color: #8f3e37;
-  color: black;
+  background-color: #92007c;
+  color: #ffffff;
 }
 
 .modal-title-logo {
@@ -25,7 +25,7 @@
 }
 
 .modal-btn {
-  background-color: #dbab50;
+  background-color: #81d300;
 }
 
 #ingredient-options {
@@ -35,13 +35,13 @@
 }
 
 .selected-item {
-  background-color: #dbab50;
+  background-color: #81d300;
   color: black;
   text-transform: uppercase;
 }
 
 .ingredient-frame {
-  background-color: #dbab50;
+  background-color: #81d300;
   height: 120px;
   width: 120px;
 }

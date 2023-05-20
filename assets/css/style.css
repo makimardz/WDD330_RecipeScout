@@ -18,9 +18,8 @@ body {
 }
 
 .main-button,
-.main-item-button,
-{
-  background-color: #dbab50;
+.main-item-button {
+  background-color: #81d300;
   color: black;
   min-width: 60px;
   text-align: center;
@@ -28,7 +27,7 @@ body {
 }
 
 .intro {
-  background-color: #dbab50;
+  background-color: #81d300;
   color: black;
   min-width: 60px;
   text-align: center;
@@ -39,7 +38,7 @@ body {
 }
 
 .main-item-background {
-  background-color: #dbab50;
+  background-color: #81d300;
   margin: 3px;
   border-radius: 5%;
 }
