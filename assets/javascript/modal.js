@@ -149,7 +149,7 @@ function getIngredientImage(food) {
   return findImage;
 }
 
-// ===========  FUNCTTIONS RELATED TO MAIN PAGE ============================
+// ===========  FUNCTIONS RELATED TO MAIN PAGE ============================
 // Create a set of ingredient buttons to display on the main page
 function createMainPageButtons() {
   let $mainIngredientBtns = $("#fav-btns");
@@ -197,7 +197,7 @@ $(document).on("click", ".main-item-button", function() {
 });
 
 /**
- * When an trash can of ingredient item is clicked, remove it from the favorites and from the selected list
+ * When a trash can of ingredient item is clicked, remove it from the favorites and from the selected list
  */
 $(document).on("click", ".main-ingredient-delete", function() {
   let food = $(this).attr("food-item");
@@ -230,7 +230,7 @@ $("#main-get-recipes, #search-api").on("click", function() {
 // ===================  SPECIFIC RECIPE DETAILS =================
 /**
  * This function gets the id of the recipe that was clicked. Then it calls
- * opeRecipeDetailsPage, which does the AJAX call to get the recipe information
+ * openRecipeDetailsPage, which does the AJAX call to get the recipe information
  * from the Spoonacular API.
  */
 $(document).on("click", ".recipe-card", function() {
