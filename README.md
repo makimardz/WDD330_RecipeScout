@@ -15,11 +15,7 @@
 
 ## Deployed Link
 
-<<<<<<< HEAD
-Recipe Scout(https://makimardz.github.io/WDD330_RecipeScout/)
-=======
-RecipeScout
->>>>>>> 1fb4941a70d2a6bf0bdd7343efe432abcc169aaa
+RecipeScout(https://makimardz.github.io/WDD330_RecipeScout/)
 
 ## Screenshot
 
