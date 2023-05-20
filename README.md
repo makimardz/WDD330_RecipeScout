@@ -15,7 +15,7 @@
 
 ## Deployed Link
 
-[Fork To Mouth](https://sallyb1988.github.io/RecipeFinder/)
+Recipe Scout(https://makimardz.github.io/WDD330_RecipeScout/)
 
 ## Screenshot
 
