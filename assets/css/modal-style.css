@@ -1,0 +1,77 @@
+.modal-header {
+  background-color: #8f3e37;
+  color: black;
+}
+
+.modal-title-logo {
+  width: 50px;
+  float: left;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial", "sans-serif"; */
+  font-weight: 500;
+  font-size: 1.3em;
+  /* width: 80%; */
+}
+
+.modal-content {
+  background-color: #ffffff;
+}
+
+.modal-dialog {
+  max-width: 75%;
+}
+
+.modal-btn {
+  background-color: #dbab50;
+}
+
+#ingredient-options {
+  flex-wrap: wrap;
+  height: 350px;
+  overflow-y: auto;
+}
+
+.selected-item {
+  background-color: #dbab50;
+  color: black;
+  text-transform: uppercase;
+}
+
+.ingredient-frame {
+  background-color: #dbab50;
+  height: 120px;
+  width: 120px;
+}
+
+.ingredient-option-image {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+.ingredient-name {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 50%;
+}
+
+#new-ingredient-input {
+  background-color: rgba(203, 206, 203, 0.678);
+}
+
+.close {
+  color: black;
+}
+
+.list-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,14 @@
+.modal-header {
+  background-color: rgb(51, 76, 143);
+  color: white;
+}
+
+.recipe-title {
+  text-transform: uppercase;
+}
+
+.instruction-line {
+  padding: 3px 0px;
+}
+
+
