@@ -43,9 +43,24 @@ const getDetailsInstructions = instr => {
   return buildStr;
 };
 
+/**
 const updateRecipeDetails = data => {
   $("#recipe-details-image").append(getDetailsRecipeImage(data));
   $("#recipe-details-title").append(`<h2>${data.name}</h2>`);
   $("#recipe-details-ingred").append(getDetailsIngredients(data.ingredients));
+  $("#recipe-details-instr").append(getDetailsInstructions(data.instructions));
+};
+*/
+
+const updateRecipeDetails = data => {
+  $("#recipe-details-image").append(getDetailsRecipeImage(data));
+  $("#recipe-details-title").append(`<h2>${data.name}</h2>`);
+
+  if (data.ingredients && data.ingredients.length > 0) {
+    $("#recipe-details-ingred").append(getDetailsIngredients(data.ingredients));
+  } else {
+    $("#recipe-details-ingred").append("<p>No ingredients available</p>");
+  }
+
   $("#recipe-details-instr").append(getDetailsInstructions(data.instructions));
 };
