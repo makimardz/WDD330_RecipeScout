@@ -1,10 +1,17 @@
 const defaultRecipeImage = "./assets/images/groceries.png";
 
 window.onload = function() {
+  const data = JSON.parse(localStorage.getItem("recipe"));
+  if (data) {
+    updateRecipeDetails(data);
+  }
+};
+/*
+window.onload = function() {
   const data = JSON.parse(localStorage.getItem("data"));
   updateRecipeDetails(data);
 };
-
+*/
 const getDetailsRecipeImage = data => {
   let recipeImageHTML = "";
   if (data.image !== "") {
@@ -43,15 +50,15 @@ const getDetailsInstructions = instr => {
   return buildStr;
 };
 
-/**
+
 const updateRecipeDetails = data => {
   $("#recipe-details-image").append(getDetailsRecipeImage(data));
   $("#recipe-details-title").append(`<h2>${data.name}</h2>`);
   $("#recipe-details-ingred").append(getDetailsIngredients(data.ingredients));
   $("#recipe-details-instr").append(getDetailsInstructions(data.instructions));
 };
-*/
 
+/*
 const updateRecipeDetails = data => {
   $("#recipe-details-image").append(getDetailsRecipeImage(data));
   $("#recipe-details-title").append(`<h2>${data.name}</h2>`);
@@ -64,3 +71,4 @@ const updateRecipeDetails = data => {
 
   $("#recipe-details-instr").append(getDetailsInstructions(data.instructions));
 };
+*/
