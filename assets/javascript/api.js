@@ -104,7 +104,7 @@ const openRecipeDetailsPage = (id) => {
  *  ingredients:  array contining ingredients used in recipe
  *  instructions: array of steps
  */
-function createRecipeObject(resp) {
+/*function createRecipeObject(resp) {
   let instructions = [];
   if (resp.analyzedInstructions.length > 0) {  // use step-by-step instructions if available
     instructions = getInstructions(resp.analyzedInstructions[0].steps);
@@ -122,6 +122,30 @@ function createRecipeObject(resp) {
     "ingredients": ingredients,
     "instructions": instructions,
   }
+  return recipe;
+}
+*/
+function createRecipeObject(resp) {
+  let instructions = [];
+
+  if (resp.analyzedInstructions && resp.analyzedInstructions.length > 0) {
+    instructions = getInstructions(resp.analyzedInstructions[0].steps);
+  } else if (resp.instructions) {
+    instructions.push(resp.instructions);
+  } else {
+    instructions = ["No instructions provided"];
+  }
+
+  const ingredients = resp.extendedIngredients ? getIngredients(resp.extendedIngredients) : [];
+
+  const recipe = {
+    "name": resp.title,
+    "image": resp.image,
+    "timeinMinutes": resp.readyInMinutes,
+    "ingredients": ingredients,
+    "instructions": instructions,
+  };
+
   return recipe;
 }
 
