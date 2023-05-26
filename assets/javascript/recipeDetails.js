@@ -1,17 +1,18 @@
 const defaultRecipeImage = "./assets/images/groceries.png";
-
+/*
 window.onload = function() {
   const data = JSON.parse(localStorage.getItem("recipe"));
   if (data) {
     updateRecipeDetails(data);
   }
 };
-/*
+*/
+
 window.onload = function() {
   const data = JSON.parse(localStorage.getItem("data"));
   updateRecipeDetails(data);
 };
-*/
+
 const getDetailsRecipeImage = data => {
   let recipeImageHTML = "";
   if (data.image !== "") {
