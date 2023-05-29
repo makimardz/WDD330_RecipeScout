@@ -89,7 +89,7 @@ const openRecipeDetailsPage = (id) => {
   }
 
   $.ajax(settings).done(function (response) {
-    recipe = createRecipeObject(response);
+    recipe = createRecipeObject($.parseJSON(response)); // Parse the JSON response
     // localStorage.clear();
     localStorage.setItem("data", JSON.stringify(recipe));
     window.open("recipeDetails.html")
